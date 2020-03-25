@@ -13,11 +13,13 @@ from pyart.core.radar import Radar
 
 from load_mrms_ppi import load_mrms_ppi
 
-fdict = [{'file': './20200302/KOHX/Velocity/00.50/20200303-060515.netcdf', 'ncvar': 'Velocity', 'pvar': 'corrected_velocity'},
-         {'file': './20200302/KOHX/Reflectivity/00.50/20200303-060458.netcdf', 'ncvar': 'ReflectivityQC', 'pvar': "reflectivity"}]
+# 4.0 deg
+fdict = [{'file': './20200302/KOHX/Velocity/04.00/20200303-055559.netcdf', 'ncvar': 'Velocity', 'pvar': 'corrected_velocity'},
+         {'file': './20200302/KOHX/Reflectivity/04.00/20200303-055559.netcdf', 'ncvar': 'ReflectivityQC', 'pvar': "reflectivity"}]
 
-fdict = [{'file': './20200302/KOHX/Velocity/04.00/20200303-060220.netcdf', 'ncvar': 'Velocity', 'pvar': 'corrected_velocity'},
-         {'file': './20200302/KOHX/Reflectivity/04.00/20200303-060220.netcdf', 'ncvar': 'ReflectivityQC', 'pvar': "reflectivity"}]
+# 0.5 deg
+fdict = [{'file': './20200302/KOHX/Velocity/00.50/20200303-060042.netcdf', 'ncvar': 'Velocity', 'pvar': 'corrected_velocity'},
+         {'file': './20200302/KOHX/Reflectivity/00.50/20200303-060024.netcdf', 'ncvar': 'ReflectivityQC', 'pvar': "reflectivity"}]
 
 
 myradar = load_mrms_ppi(fdict)
