@@ -1,0 +1,77 @@
+netcdf \20200303-060515 {
+dimensions:
+	Azimuth = 720 ;
+	Gate = 1192 ;
+variables:
+	float Azimuth(Azimuth) ;
+		Azimuth:units = "Degrees" ;
+	float BeamWidth(Azimuth) ;
+		BeamWidth:units = "Degrees" ;
+	float AzimuthalSpacing(Azimuth) ;
+		AzimuthalSpacing:units = "Degrees" ;
+	float GateWidth(Azimuth) ;
+		GateWidth:units = "Meters" ;
+	int RadialTime(Azimuth) ;
+		RadialTime:units = "Milliseconds" ;
+	float NyquistVelocity(Azimuth) ;
+		NyquistVelocity:units = "MetersPerSecond" ;
+	float Velocity(Azimuth, Gate) ;
+		Velocity:units = "MetersPerSecond" ;
+		Velocity:NumValidRuns = -1 ;
+
+// global attributes:
+		:Elevation = 0.5 ;
+		:ElevationUnits = "Degrees" ;
+		:RangeToFirstGate = 2125. ;
+		:RangeToFirstGateUnits = "Meters" ;
+		:MissingData = -99900.f ;
+		:RangeFolded = -99901.f ;
+		:TypeName = "Velocity" ;
+		:DataType = "RadialSet" ;
+		:Latitude = 36.247200012207 ;
+		:Longitude = -86.5625 ;
+		:Height = 206. ;
+		:Time = 1583215515 ;
+		:FractionalTime = 0.865000000001601 ;
+		:attributes = " Atmos C Cal_Z Cal_Zdr EndOfVolume Freezing_Level Horizontal_Noise Horizontal_Trans_Power Min_Sys_PhiDP Nyquist_Vel SNR_Threshold SubType System_Zdr Tover Unambiguous_Range Unit Vertical_Noise Vertical_Trans_Power radarName vcp" ;
+		:Atmos-unit = "dB/km" ;
+		:Atmos-value = "-0.012" ;
+		:C-unit = "dimensionless" ;
+		:C-value = "40.8125" ;
+		:Cal_Z-unit = "dBZ" ;
+		:Cal_Z-value = "0.0" ;
+		:Cal_Zdr-unit = "dB" ;
+		:Cal_Zdr-value = "0.0" ;
+		:EndOfVolume-unit = "text" ;
+		:EndOfVolume-value = "false" ;
+		:Freezing_Level-unit = "Meter" ;
+		:Freezing_Level-value = "-99900" ;
+		:Horizontal_Noise-unit = "dBm" ;
+		:Horizontal_Noise-value = "-81.3815" ;
+		:Horizontal_Trans_Power-unit = "kW" ;
+		:Horizontal_Trans_Power-value = "135.203" ;
+		:Min_Sys_PhiDP-unit = "Degree" ;
+		:Min_Sys_PhiDP-value = "60" ;
+		:Nyquist_Vel-unit = "MetersPerSecond" ;
+		:Nyquist_Vel-value = "33.259998" ;
+		:SNR_Threshold-unit = "dB" ;
+		:SNR_Threshold-value = "3.5" ;
+		:SubType-unit = "dimensionless" ;
+		:SubType-value = "00.50" ;
+		:System_Zdr-unit = "dB" ;
+		:System_Zdr-value = "-0.204292" ;
+		:Tover-unit = "db" ;
+		:Tover-value = "5" ;
+		:Unambiguous_Range-unit = "kilometer" ;
+		:Unambiguous_Range-value = "117" ;
+		:Unit-unit = "dimensionless" ;
+		:Unit-value = "MetersPerSecond" ;
+		:Vertical_Noise-unit = "dBm" ;
+		:Vertical_Noise-value = "-81.2838" ;
+		:Vertical_Trans_Power-unit = "kW" ;
+		:Vertical_Trans_Power-value = "132.162" ;
+		:radarName-unit = "dimensionless" ;
+		:radarName-value = "KOHX" ;
+		:vcp-unit = "dimensionless" ;
+		:vcp-value = "212.000000" ;
+}
